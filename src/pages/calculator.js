@@ -7,15 +7,36 @@ export default function Calculator() {
   const [gasPrice, setGasPrice] = useState(0);
   const [timeDashing, setTimeDashing] = useState(0);
 
+  useEffect(() => {});
   return (
     <div>
       <section className="holder">
         <div>
-          <input type="number"></input>
-          <input type="number"></input>
-          <input type="number"></input>
-          <input type="number"></input>
-          <input type="number"></input>
+          <input
+            value={earnedAmount}
+            type="number"
+            placeholder="Amount Earned"
+          ></input>
+          <input
+            value={mpg}
+            type="number"
+            placeholder="Average Miles per Gallon"
+          ></input>
+          <input
+            value={milesDriven}
+            type="number"
+            placeholder="Miles Driven during Shift"
+          ></input>
+          <input
+            value={gasPrice}
+            type="number"
+            placeholder="Price of Gas per Gallon"
+          ></input>
+          <input
+            value={timeDashing}
+            type="number"
+            placeholder="Total Time Dashing"
+          ></input>
         </div>
       </section>
     </div>
